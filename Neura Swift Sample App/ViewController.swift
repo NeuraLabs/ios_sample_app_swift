@@ -35,7 +35,9 @@ class ViewController: UIViewController {
         self.setupUI()
         self.simulateEvent.isHidden = true
         self.permissionsListButton.isHidden = true
-        subManager.checkSubscriptions()
+        if NeuraSDK.shared.isAuthenticated() {
+            subManager.checkSubscriptions()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -107,6 +109,7 @@ class ViewController: UIViewController {
         self.showBlockingProgress()
         
         let request = NeuraAnonymousAuthenticationRequest()
+        weak var wSelf = self
         NeuraSDK.shared.authenticate(with: request) { result in
             if let error = result.error {
                 // Handle authentication errors if required
@@ -121,6 +124,7 @@ class ViewController: UIViewController {
                 // Successful authentication
                 // (access token will be received by push)
                 self.neuraAuthStateUpdated()
+                wSelf!.subManager.checkSubscriptions()
             } else {
                 // Handle failed login.
                 self.showAlert(title: "Login failed", message: nil)

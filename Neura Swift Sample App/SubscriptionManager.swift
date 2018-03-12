@@ -13,9 +13,9 @@ import NeuraSDK
 class SubscriptionsManager {
     
     let requiredSubscriptions: Set<String> = [
-        EventName.eventArrivedHome.rawValue,
+//        EventName.eventArrivedHome.rawValue,
 //        EventName.eventLeftHome.rawValue,
-        EventName.eventArrivedToWork.rawValue,
+//        EventName.eventArrivedToWork.rawValue,
 //        EventName.eventLeftWork.rawValue,
 //        EventName.eventStartedDriving.rawValue,
 //        EventName.eventFinishedDriving.rawValue,
@@ -34,6 +34,8 @@ class SubscriptionsManager {
     var lastTimeChecked: Date? = nil
     
     func checkSubscriptions() {
+        guard NeuraSDK.shared.isAuthenticated() else { return }
+        
         weak var wSelf = self
         
         guard currentlyWorking == false else {
@@ -74,6 +76,8 @@ class SubscriptionsManager {
     }
     
     func subscribeToMissingSubscriptions(){
+        guard NeuraSDK.shared.isAuthenticated() else { return }
+        
         guard self.missingSubscriptions.count > 0 else {
             self.currentlyWorking = false
             return
