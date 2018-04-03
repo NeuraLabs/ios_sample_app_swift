@@ -11,6 +11,11 @@
 		0877CEB41F39FF250020B59E /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877CEB31F39FF250020B59E /* PushNotifications.swift */; };
 		08DD60691F936145007932AD /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD60681F936145007932AD /* NotificationService.swift */; };
 		08DD606D1F936145007932AD /* Notifications.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08DD60661F936145007932AD /* Notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55698F9220724DDD00FC4349 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55698F9120724DDC00FC4349 /* login.storyboard */; };
+		55698FA2207381CE00FC4349 /* LoginPhoneAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55698FA1207381CE00FC4349 /* LoginPhoneAuthVC.swift */; };
+		55698FA420738C7400FC4349 /* CountryCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55698FA320738C7400FC4349 /* CountryCodeHelper.swift */; };
+		55698FA620739DF300FC4349 /* LoginCountrySelectorTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */; };
+		55698FA82073A2D300FC4349 /* CountryCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 55698FA72073A2D300FC4349 /* CountryCodes.json */; };
 		55F5FBF1202896620027FDE2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */; };
 		55F5FBF92029A2B30027FDE2 /* SendEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */; };
 		55F5FBFA2029A2B30027FDE2 /* SimulateEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */; };
@@ -66,6 +71,11 @@
 		08DD60661F936145007932AD /* Notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DD60681F936145007932AD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		08DD606A1F936145007932AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55698F9120724DDC00FC4349 /* login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		55698FA1207381CE00FC4349 /* LoginPhoneAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPhoneAuthVC.swift; sourceTree = "<group>"; };
+		55698FA320738C7400FC4349 /* CountryCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeHelper.swift; sourceTree = "<group>"; };
+		55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCountrySelectorTVC.swift; sourceTree = "<group>"; };
+		55698FA72073A2D300FC4349 /* CountryCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CountryCodes.json; sourceTree = "<group>"; };
 		55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEventViewController.swift; sourceTree = "<group>"; };
 		55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateEventTableViewCell.swift; sourceTree = "<group>"; };
@@ -201,9 +211,14 @@
 				0838F6B11F93533100B39E1D /* MBProgressHUD */,
 				E1F7B6B01DBF9483001C27F0 /* Utilities */,
 				E19DB1DC1DC0E03C0045AA6E /* Assets.xcassets */,
+				55698FA1207381CE00FC4349 /* LoginPhoneAuthVC.swift */,
+				55698F9120724DDC00FC4349 /* login.storyboard */,
 				E152814E1DC0E16E001B7563 /* LaunchScreen.storyboard */,
 				E19DB1DE1DC0E0440045AA6E /* Info.plist */,
 				55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */,
+				55698FA320738C7400FC4349 /* CountryCodeHelper.swift */,
+				55698FA72073A2D300FC4349 /* CountryCodes.json */,
+				55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */,
 			);
 			path = "Neura Swift Sample App";
 			sourceTree = "<group>";
@@ -360,6 +375,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55698F9220724DDD00FC4349 /* login.storyboard in Resources */,
+				55698FA82073A2D300FC4349 /* CountryCodes.json in Resources */,
 				E19DB1ED1DC0E0AF0045AA6E /* Main.storyboard in Resources */,
 				E15281501DC0E16E001B7563 /* LaunchScreen.storyboard in Resources */,
 				E19DB1EA1DC0E0A90045AA6E /* Assets.xcassets in Resources */,
@@ -376,10 +393,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSOAuth/FSOAuth.framework",
 				"${PODS_ROOT}/NeuraSDKFramework/NeuraSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSOAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NeuraSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +436,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -436,8 +455,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0877CEB41F39FF250020B59E /* PushNotifications.swift in Sources */,
+				55698FA420738C7400FC4349 /* CountryCodeHelper.swift in Sources */,
 				E15281491DC0E11F001B7563 /* DataSourceProtocol.swift in Sources */,
 				E19DB1E01DC0E0960045AA6E /* AppDelegate.swift in Sources */,
+				55698FA2207381CE00FC4349 /* LoginPhoneAuthVC.swift in Sources */,
 				E19DB1E11DC0E0960045AA6E /* ViewController.swift in Sources */,
 				E152814C1DC0E132001B7563 /* SupportedCapabilitiesDataSource.swift in Sources */,
 				E19DB1E21DC0E0960045AA6E /* SubscriptionsListViewController.swift in Sources */,
@@ -447,6 +468,7 @@
 				E19DB1E41DC0E0960045AA6E /* PickerViewController.swift in Sources */,
 				E152814D1DC0E132001B7563 /* SupportedDevicesDataSource.swift in Sources */,
 				E19DB1E51DC0E0960045AA6E /* DeviceOperationsTableViewCell.swift in Sources */,
+				55698FA620739DF300FC4349 /* LoginCountrySelectorTVC.swift in Sources */,
 				E19DB1E61DC0E0960045AA6E /* DeviceOperationsViewController.swift in Sources */,
 				55F5FBF1202896620027FDE2 /* SubscriptionManager.swift in Sources */,
 				55F5FBFA2029A2B30027FDE2 /* SimulateEventTableViewCell.swift in Sources */,

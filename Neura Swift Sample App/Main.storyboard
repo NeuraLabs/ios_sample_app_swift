@@ -16,6 +16,16 @@
         </array>
     </customFonts>
     <scenes>
+        <!--login-->
+        <scene sceneID="UUI-zA-sfQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="login" id="nGW-JO-ja5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Tq3-58-M3g"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8b3-du-cG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="717"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -107,7 +117,7 @@
                                 <rect key="frame" x="20" y="367" width="335" height="280"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmK-0y-OZZ" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="31.5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Connect and Request Permissions">
@@ -118,7 +128,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtT-8i-XDo" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="48.5" width="335" height="38"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="335" height="31.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -136,7 +146,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uys-ny-dXL" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="96.5" width="335" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="83" width="335" height="31.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Simulate Event">
@@ -146,8 +156,19 @@
                                             <action selector="simulateEventPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vz1-Yr-nY4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-15-6lt" userLabel="Lega" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="124.5" width="335" height="31"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Phone Verification Login">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="nGW-JO-ja5" kind="modal" id="2rF-dj-jxH"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ9-oJ-Zgd" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="145" width="335" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="165.5" width="335" height="31.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Permissions List">
@@ -158,7 +179,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOV-7w-02R" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="193.5" width="335" height="38"/>
+                                        <rect key="frame" x="0.0" y="207" width="335" height="31.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Devices">
@@ -169,7 +190,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4h-X2-lyk" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="241.5" width="335" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="248.5" width="335" height="31.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Send Log">
