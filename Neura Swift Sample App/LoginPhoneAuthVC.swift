@@ -9,46 +9,64 @@
 import Foundation
 import NeuraSDK
 
-class LoginPhoneAuthVC: UIViewController, CountryCodeDelegate{
+class LoginPhoneAuthVC: UIViewController, CountryCodeDelegate {
     
     @IBOutlet weak var countryCodeTf: UITextField!
     @IBOutlet weak var phoneNumberTF: UITextField!
+    @IBOutlet weak var codeNumberTF:  UITextField!
+    
+    @IBOutlet weak var whatIsNeuraBtn: UIButton!
+    @IBOutlet weak var termsBtn: UIButton!
+    @IBOutlet weak var smsChargeLabel:  UILabel!
+    @IBOutlet weak var screenDescLabel: UILabel!
+    @IBOutlet weak var acceptBtn: UIButton!
+    
+    var phoneNumber:String?
     
     @IBAction func acceptAction(_ sender: Any) {
+         self.view.endEditing(true)
         let request = NeuraAuthenticationRequest(controller: self)
-        let phone = countryCodeTf.text! + phoneNumberTF.text!
-        request.phone = phone
+        phoneNumber = countryCodeTf.text! + phoneNumberTF.text!
         request.authenticationType = .phoneInjection
-        
-        
+        request.phone = phoneNumber
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+
         NeuraSDK.shared.authenticate(with: request, callback: {
             result in
-            if result.success {
-                print("sucess")
+            DispatchQueue.main.async {
+                MBProgressHUD.hide(for: self.view, animated: true)
+                if result.success {
+                     self.dismiss(animated: true, completion: nil)
+                }
             }
         })
-        
-        
-        
-        
-        //        self.phoneNumber = [NSString stringWithFormat:@"+%@%@", self.countryCodeTF.text, self.phoneNumberTF.text];
-        //        NSString *phone = [self enteredPhoneNumber:self.phoneNumber shakeOnError:YES];
-        //
-        //        if (phone && !self.isWatingForCode) {
-        //            [self registerWithPhone:phone];
-        //
-        //        } else if (self.isWatingForCode) {
-        //            [self verifyCode];
-        //        }
     }
     
     @IBAction func backBtnActoin(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func termsAction(_ sender: Any) {
+        let webVC = self.storyboard?.instantiateViewController(withIdentifier: "TermsAndConditionsViewController") as! TermsAndConditionsViewController
+        webVC.urlStr = "https://www.theneura.com/terms.html"
+        self.present(webVC, animated: true, completion: nil)
         
+        
+    }
+    
+    @IBAction func whatIsNeuraAction(_ sender: Any) {
+        let webVC = self.storyboard?.instantiateViewController(withIdentifier: "TermsAndConditionsViewController") as! TermsAndConditionsViewController
+         webVC.urlStr = "https://www.theneura.com/whatisneura.html"
+        self.present(webVC, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+       
+        self.definesPresentationContext = true
+        self.providesPresentationContextTransitionStyle = true
+        
         let countryCode = CountryCodeHelepr.getCountryCallingCode(countryRegionCode:NSLocale.current.regionCode!)
         countryCodeTf.text = "+" + countryCode
         
@@ -56,20 +74,18 @@ class LoginPhoneAuthVC: UIViewController, CountryCodeDelegate{
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         self.view.addGestureRecognizer(tap)
     }
-    
+  
     func codeWasChoosen(code: String) {
         countryCodeTf.text = code
     }
-    
     
     @objc func handleTap(sender: UITapGestureRecognizer? = nil) {
         self.view.endEditing(true)
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "countryCodeSelectorSegue"{
-            if let vc = (segue.destination as! UINavigationController).topViewController as? LoginCountrySelectorTVC{
+            if let vc = (segue.destination as! UINavigationController).topViewController as? LoginCountrySelectorTVC {
                 vc.countryCodeDelegate = self
             }
         }

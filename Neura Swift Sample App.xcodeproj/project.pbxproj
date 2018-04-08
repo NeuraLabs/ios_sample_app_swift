@@ -16,6 +16,9 @@
 		55698FA420738C7400FC4349 /* CountryCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55698FA320738C7400FC4349 /* CountryCodeHelper.swift */; };
 		55698FA620739DF300FC4349 /* LoginCountrySelectorTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */; };
 		55698FA82073A2D300FC4349 /* CountryCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 55698FA72073A2D300FC4349 /* CountryCodes.json */; };
+		55E57235207A0DBC006D2D10 /* NeuraSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E57233207A0D9D006D2D10 /* NeuraSDK.framework */; };
+		55E57236207A0DBC006D2D10 /* NeuraSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E57233207A0D9D006D2D10 /* NeuraSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */; };
 		55F5FBF1202896620027FDE2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */; };
 		55F5FBF92029A2B30027FDE2 /* SendEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */; };
 		55F5FBFA2029A2B30027FDE2 /* SimulateEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */; };
@@ -60,6 +63,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55E57237207A0DBD006D2D10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55E57236207A0DBC006D2D10 /* NeuraSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +90,8 @@
 		55698FA320738C7400FC4349 /* CountryCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCodeHelper.swift; sourceTree = "<group>"; };
 		55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCountrySelectorTVC.swift; sourceTree = "<group>"; };
 		55698FA72073A2D300FC4349 /* CountryCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CountryCodes.json; sourceTree = "<group>"; };
+		55E57233207A0D9D006D2D10 /* NeuraSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NeuraSDK.framework; path = "Neura Swift Sample App/NeuraSDK.framework"; sourceTree = "<group>"; };
+		55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEventViewController.swift; sourceTree = "<group>"; };
 		55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateEventTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9757AA5BA993452C4286B2B7 /* Pods_Neura_Swift_Sample_App.framework in Frameworks */,
+				55E57235207A0DBC006D2D10 /* NeuraSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +196,7 @@
 		E125F7EF1D328BF00078E7B4 = {
 			isa = PBXGroup;
 			children = (
+				55E57233207A0D9D006D2D10 /* NeuraSDK.framework */,
 				E125F7FA1D328BF00078E7B4 /* Neura Swift Sample App */,
 				08DD60671F936145007932AD /* Notifications */,
 				E125F7F91D328BF00078E7B4 /* Products */,
@@ -219,6 +237,7 @@
 				55698FA320738C7400FC4349 /* CountryCodeHelper.swift */,
 				55698FA72073A2D300FC4349 /* CountryCodes.json */,
 				55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */,
+				55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */,
 			);
 			path = "Neura Swift Sample App";
 			sourceTree = "<group>";
@@ -301,6 +320,7 @@
 				88667603DC253953BF2F374D /* [CP] Embed Pods Frameworks */,
 				AE386BB6C8B20C5BCB572487 /* [CP] Copy Pods Resources */,
 				08DD60711F936145007932AD /* Embed App Extensions */,
+				55E57237207A0DBD006D2D10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,6 +488,7 @@
 				E19DB1E41DC0E0960045AA6E /* PickerViewController.swift in Sources */,
 				E152814D1DC0E132001B7563 /* SupportedDevicesDataSource.swift in Sources */,
 				E19DB1E51DC0E0960045AA6E /* DeviceOperationsTableViewCell.swift in Sources */,
+				55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */,
 				55698FA620739DF300FC4349 /* LoginCountrySelectorTVC.swift in Sources */,
 				E19DB1E61DC0E0960045AA6E /* DeviceOperationsViewController.swift in Sources */,
 				55F5FBF1202896620027FDE2 /* SubscriptionManager.swift in Sources */,
@@ -664,6 +685,8 @@
 					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
 					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
 					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
+					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
+					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
 				);
 				INFOPLIST_FILE = "Neura Swift Sample App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -697,6 +720,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
+					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
 					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
 					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",
 					"$(PROJECT_DIR)/Neura\\ Swift\\ Sample\\ App",

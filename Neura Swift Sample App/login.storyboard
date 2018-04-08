@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="jLp-vw-0y2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="ujq-UD-vWR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -82,19 +82,13 @@
                                                 <rect key="frame" x="36" y="549" width="303" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="Why do we need your phone number?">
+                                                <state key="normal" title="Terms and conditions">
                                                     <color key="titleColor" red="0.18606305122375488" green="0.71385073661804199" blue="0.94173824787139893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FTS-ia-i79">
-                                                <rect key="frame" x="36" y="513" width="302" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="What is a Neura account?">
-                                                    <color key="titleColor" red="0.18823529410000001" green="0.76862745099999996" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="titleShadowColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
+                                                <connections>
+                                                    <action selector="termsAction:" destination="jLp-vw-0y2" eventType="touchUpInside" id="QKO-wF-CAS"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Carrier SMS charges may apply" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YEd-8d-r21">
                                                 <rect key="frame" x="66" y="413" width="242" height="20"/>
@@ -119,6 +113,18 @@
                                                     <segue destination="Tp5-05-Ca0" kind="modal" identifier="countryCodeSelectorSegue" id="0Xq-Pu-bg4"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FTS-ia-i79">
+                                                <rect key="frame" x="18" y="510" width="335" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="What is a Neura account?">
+                                                    <color key="titleColor" red="0.18823529410000001" green="0.76862745099999996" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="whatIsNeuraAction:" destination="jLp-vw-0y2" eventType="touchUpInside" id="FaZ-MI-ci2"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -133,25 +139,44 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xeA-zt-R5f"/>
+                    <navigationItem key="navigationItem" id="EEs-sM-QsF"/>
                     <connections>
+                        <outlet property="acceptBtn" destination="x2a-EP-PYd" id="sZh-Ob-jbI"/>
+                        <outlet property="codeNumberTF" destination="4XS-FM-W3c" id="OCJ-Wv-fFQ"/>
                         <outlet property="countryCodeTf" destination="N5j-HA-YHz" id="Yjg-26-MBl"/>
                         <outlet property="phoneNumberTF" destination="8lU-2O-YIf" id="vic-c6-QcB"/>
+                        <outlet property="screenDescLabel" destination="Tpy-ZU-MAI" id="R1i-ll-qbq"/>
+                        <outlet property="smsChargeLabel" destination="YEd-8d-r21" id="dlZ-M4-WCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EM1-N0-2LC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1475" y="-227"/>
+            <point key="canvasLocation" x="1474.5" y="-227.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iQ6-NZ-Yvn">
+            <objects>
+                <navigationController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" navigationBarHidden="YES" id="ujq-UD-vWR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qga-nC-0sH">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jLp-vw-0y2" kind="relationship" relationship="rootViewController" id="WaS-Lf-MUq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUg-jv-d9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-228"/>
         </scene>
         <!--Terms And Conditions View Controller-->
         <scene sceneID="9xR-It-Ev8">
             <objects>
-                <viewController restorationIdentifier="TermsAndConditionsViewController" storyboardIdentifier="TermsAndConditionsViewController" id="G0O-LF-DP2" customClass="TermsAndConditionsViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="TermsAndConditionsViewController" storyboardIdentifier="TermsAndConditionsViewController" id="G0O-LF-DP2" customClass="TermsAndConditionsViewController" customModule="Neura_Swift_Sample_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NlK-0R-knW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +206,7 @@
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="backButtonClick:" destination="G0O-LF-DP2" eventType="touchUpInside" id="GqP-s2-uWX"/>
+                                            <action selector="backBtnClicked:" destination="G0O-LF-DP2" eventType="touchUpInside" id="4bP-W0-EEb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -191,9 +216,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="15M-FE-5OZ" id="vIi-Sz-vPX"/>
-                        <outlet property="headerView" destination="vUr-hN-vgj" id="FDa-Hw-sKe"/>
-                        <outlet property="webView" destination="4hu-EM-fRY" id="GCD-rk-gZa"/>
+                        <outlet property="headerView" destination="vUr-hN-vgj" id="JrN-Bb-hJL"/>
+                        <outlet property="webView" destination="4hu-EM-fRY" id="5kd-gk-QsT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tft-W5-O0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
