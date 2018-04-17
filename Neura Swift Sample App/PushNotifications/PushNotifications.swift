@@ -7,6 +7,7 @@
 //
 import UIKit
 import NeuraSDK
+import UserNotifications
 
 let kStoredDeviceToken = "stored device token"
 
@@ -14,9 +15,10 @@ class PushNotifications: NSObject {
     
     class func requestPermissionForPushNotifications() {
         let app = UIApplication.shared
-        let settings = UIUserNotificationSettings(types: [.alert,.badge,.sound],
-                                                  categories: nil)
-        app.registerUserNotificationSettings(settings)
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+            (granted, error) in
+        }
+        
         app.registerForRemoteNotifications()
     }
     

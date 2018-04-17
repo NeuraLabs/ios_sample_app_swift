@@ -12,23 +12,22 @@ import NeuraSDK
 
 class SendEventViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var eventsTableView: UITableView!
+    var eventNames = Array<String>()
     
+    @IBOutlet weak var eventsTableView: UITableView!
     
     @IBAction func backButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    var eventNames = Array<String>()
-   
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         NeuraSDK.shared.getEventsList(callback: { result in
-           
+            
             result.eventDefinitions.forEach { item in
                 self.eventNames.append(item.name)
             }
+            
             self.eventsTableView.reloadData()
         })
     }
@@ -43,7 +42,7 @@ class SendEventViewController: UIViewController, UITableViewDataSource, UITableV
         let enumEventName =  NEvent.enum(forEventName: eventName)
        
         cell.sendBtn.isHidden = enumEventName == .undefined
-        cell.eventName.text = eventName
+        cell.eventName.text   = eventName
         cell.eventNameForEnum = eventName
         return cell
     }

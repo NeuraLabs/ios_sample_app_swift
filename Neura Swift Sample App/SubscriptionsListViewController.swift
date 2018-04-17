@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import NeuraSDK
 
-class SubscriptionsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class SubscriptionsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //MARK: Properties
     let neuraSDK = NeuraSDK.shared
@@ -84,6 +84,7 @@ class SubscriptionsListViewController: UIViewController, UITableViewDelegate, UI
         // Configure the cell.
         let eventName = self.eventNamesArray[indexPath.item]
         cell.subscriptionName?.text = eventName
+        cell.subscribeSwitch.isUserInteractionEnabled = false
         
         if let _ = self.subscriptions[eventName] {
             cell.subscribeSwitch.isOn = true

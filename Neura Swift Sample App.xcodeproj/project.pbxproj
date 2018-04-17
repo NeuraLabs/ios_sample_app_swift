@@ -19,23 +19,14 @@
 		55E57235207A0DBC006D2D10 /* NeuraSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E57233207A0D9D006D2D10 /* NeuraSDK.framework */; };
 		55E57236207A0DBC006D2D10 /* NeuraSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E57233207A0D9D006D2D10 /* NeuraSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */; };
-		55F5FBF1202896620027FDE2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */; };
 		55F5FBF92029A2B30027FDE2 /* SendEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */; };
 		55F5FBFA2029A2B30027FDE2 /* SimulateEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */; };
 		9757AA5BA993452C4286B2B7 /* Pods_Neura_Swift_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E00058F4480B85D40194C /* Pods_Neura_Swift_Sample_App.framework */; };
-		E15281491DC0E11F001B7563 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15281481DC0E11F001B7563 /* DataSourceProtocol.swift */; };
-		E152814C1DC0E132001B7563 /* SupportedCapabilitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E152814A1DC0E132001B7563 /* SupportedCapabilitiesDataSource.swift */; };
-		E152814D1DC0E132001B7563 /* SupportedDevicesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E152814B1DC0E132001B7563 /* SupportedDevicesDataSource.swift */; };
 		E15281501DC0E16E001B7563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E152814E1DC0E16E001B7563 /* LaunchScreen.storyboard */; };
 		E19DB1E01DC0E0960045AA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1C41DC0DFAF0045AA6E /* AppDelegate.swift */; };
 		E19DB1E11DC0E0960045AA6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1CA1DC0DFD60045AA6E /* ViewController.swift */; };
 		E19DB1E21DC0E0960045AA6E /* SubscriptionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1CC1DC0DFE30045AA6E /* SubscriptionsListViewController.swift */; };
 		E19DB1E31DC0E0960045AA6E /* SubscriptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1CE1DC0DFE70045AA6E /* SubscriptionsTableViewCell.swift */; };
-		E19DB1E41DC0E0960045AA6E /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1D21DC0DFFB0045AA6E /* PickerViewController.swift */; };
-		E19DB1E51DC0E0960045AA6E /* DeviceOperationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1D41DC0E0090045AA6E /* DeviceOperationsTableViewCell.swift */; };
-		E19DB1E61DC0E0960045AA6E /* DeviceOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1D51DC0E0090045AA6E /* DeviceOperationsViewController.swift */; };
-		E19DB1E71DC0E0960045AA6E /* DeviceOperationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1D01DC0DFF40045AA6E /* DeviceOperationsListViewController.swift */; };
-		E19DB1E81DC0E0960045AA6E /* PermissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1D81DC0E0280045AA6E /* PermissionsListViewController.swift */; };
 		E19DB1E91DC0E0960045AA6E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1C81DC0DFC20045AA6E /* RoundedButton.swift */; };
 		E19DB1EA1DC0E0A90045AA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19DB1DC1DC0E03C0045AA6E /* Assets.xcassets */; };
 		E19DB1ED1DC0E0AF0045AA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19DB1C61DC0DFB50045AA6E /* Main.storyboard */; };
@@ -92,15 +83,11 @@
 		55698FA72073A2D300FC4349 /* CountryCodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CountryCodes.json; sourceTree = "<group>"; };
 		55E57233207A0D9D006D2D10 /* NeuraSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NeuraSDK.framework; path = "Neura Swift Sample App/NeuraSDK.framework"; sourceTree = "<group>"; };
 		55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
-		55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEventViewController.swift; sourceTree = "<group>"; };
 		55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateEventTableViewCell.swift; sourceTree = "<group>"; };
 		698E00058F4480B85D40194C /* Pods_Neura_Swift_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neura_Swift_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		766AEE5FFE920C3AAB641E00 /* Pods-Neura Swift Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neura Swift Sample App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App.release.xcconfig"; sourceTree = "<group>"; };
 		E125F7F81D328BF00078E7B4 /* Neura Swift Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neura Swift Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E15281481DC0E11F001B7563 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSourceProtocol.swift; path = "Neura Swift Sample App/DataSourceProtocol.swift"; sourceTree = SOURCE_ROOT; };
-		E152814A1DC0E132001B7563 /* SupportedCapabilitiesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SupportedCapabilitiesDataSource.swift; path = "Neura Swift Sample App/SupportedCapabilitiesDataSource.swift"; sourceTree = SOURCE_ROOT; };
-		E152814B1DC0E132001B7563 /* SupportedDevicesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SupportedDevicesDataSource.swift; path = "Neura Swift Sample App/SupportedDevicesDataSource.swift"; sourceTree = SOURCE_ROOT; };
 		E152814F1DC0E16E001B7563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Neura Swift Sample App/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		E19DB1C41DC0DFAF0045AA6E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Neura Swift Sample App/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		E19DB1C61DC0DFB50045AA6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Neura Swift Sample App/Main.storyboard"; sourceTree = SOURCE_ROOT; };
@@ -108,11 +95,6 @@
 		E19DB1CA1DC0DFD60045AA6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Neura Swift Sample App/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		E19DB1CC1DC0DFE30045AA6E /* SubscriptionsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsListViewController.swift; path = "Neura Swift Sample App/SubscriptionsListViewController.swift"; sourceTree = SOURCE_ROOT; };
 		E19DB1CE1DC0DFE70045AA6E /* SubscriptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionsTableViewCell.swift; path = "Neura Swift Sample App/SubscriptionsTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
-		E19DB1D01DC0DFF40045AA6E /* DeviceOperationsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceOperationsListViewController.swift; path = "Neura Swift Sample App/DeviceOperationsListViewController.swift"; sourceTree = SOURCE_ROOT; };
-		E19DB1D21DC0DFFB0045AA6E /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewController.swift; path = "Neura Swift Sample App/PickerViewController.swift"; sourceTree = SOURCE_ROOT; };
-		E19DB1D41DC0E0090045AA6E /* DeviceOperationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceOperationsTableViewCell.swift; path = "Neura Swift Sample App/DeviceOperationsTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
-		E19DB1D51DC0E0090045AA6E /* DeviceOperationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceOperationsViewController.swift; path = "Neura Swift Sample App/DeviceOperationsViewController.swift"; sourceTree = SOURCE_ROOT; };
-		E19DB1D81DC0E0280045AA6E /* PermissionsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionsListViewController.swift; path = "Neura Swift Sample App/PermissionsListViewController.swift"; sourceTree = SOURCE_ROOT; };
 		E19DB1DC1DC0E03C0045AA6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Neura Swift Sample App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		E19DB1DE1DC0E0440045AA6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Neura Swift Sample App/Info.plist"; sourceTree = SOURCE_ROOT; };
 		E1EDE09C1DBFACE6001B6329 /* Neura Swift Sample App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Neura Swift Sample App.entitlements"; path = "Neura Swift Sample App/Neura Swift Sample App.entitlements"; sourceTree = SOURCE_ROOT; };
@@ -167,6 +149,19 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		55C38C792085C38B00B86A1F /* Phone Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */,
+				55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */,
+				55698F9120724DDC00FC4349 /* login.storyboard */,
+				55698FA72073A2D300FC4349 /* CountryCodes.json */,
+				55698FA320738C7400FC4349 /* CountryCodeHelper.swift */,
+				55698FA1207381CE00FC4349 /* LoginPhoneAuthVC.swift */,
+			);
+			path = "Phone Authentication";
+			sourceTree = "<group>";
+		};
 		55F5FBF52029A2B20027FDE2 /* SendEventViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,51 +212,21 @@
 		E125F7FA1D328BF00078E7B4 /* Neura Swift Sample App */ = {
 			isa = PBXGroup;
 			children = (
+				55C38C792085C38B00B86A1F /* Phone Authentication */,
 				55F5FBF52029A2B20027FDE2 /* SendEventViewController */,
 				E1EDE09C1DBFACE6001B6329 /* Neura Swift Sample App.entitlements */,
+				E152814E1DC0E16E001B7563 /* LaunchScreen.storyboard */,
+				E19DB1DE1DC0E0440045AA6E /* Info.plist */,
 				E19DB1C41DC0DFAF0045AA6E /* AppDelegate.swift */,
+				E19DB1DC1DC0E03C0045AA6E /* Assets.xcassets */,
 				E19DB1C61DC0DFB50045AA6E /* Main.storyboard */,
 				E1E02F4F1DA54BBC001E83B4 /* Main View Controller */,
 				0877CEB21F39FF0F0020B59E /* PushNotifications */,
 				E1E02F4E1DA54B7B001E83B4 /* Subscriptions List View Controller */,
-				E19D02F71DA11DA200D67556 /* DeviceOperationsViewController */,
-				E173C8FD1DAB81FB002D46F7 /* PermissionsListViewController */,
 				0838F6B11F93533100B39E1D /* MBProgressHUD */,
 				E1F7B6B01DBF9483001C27F0 /* Utilities */,
-				E19DB1DC1DC0E03C0045AA6E /* Assets.xcassets */,
-				55698FA1207381CE00FC4349 /* LoginPhoneAuthVC.swift */,
-				55698F9120724DDC00FC4349 /* login.storyboard */,
-				E152814E1DC0E16E001B7563 /* LaunchScreen.storyboard */,
-				E19DB1DE1DC0E0440045AA6E /* Info.plist */,
-				55F5FBF0202896620027FDE2 /* SubscriptionManager.swift */,
-				55698FA320738C7400FC4349 /* CountryCodeHelper.swift */,
-				55698FA72073A2D300FC4349 /* CountryCodes.json */,
-				55698FA520739DF300FC4349 /* LoginCountrySelectorTVC.swift */,
-				55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */,
 			);
 			path = "Neura Swift Sample App";
-			sourceTree = "<group>";
-		};
-		E173C8FD1DAB81FB002D46F7 /* PermissionsListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E19DB1D81DC0E0280045AA6E /* PermissionsListViewController.swift */,
-			);
-			name = PermissionsListViewController;
-			sourceTree = "<group>";
-		};
-		E19D02F71DA11DA200D67556 /* DeviceOperationsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E19DB1D21DC0DFFB0045AA6E /* PickerViewController.swift */,
-				E19DB1D41DC0E0090045AA6E /* DeviceOperationsTableViewCell.swift */,
-				E19DB1D51DC0E0090045AA6E /* DeviceOperationsViewController.swift */,
-				E19DB1D01DC0DFF40045AA6E /* DeviceOperationsListViewController.swift */,
-				E15281481DC0E11F001B7563 /* DataSourceProtocol.swift */,
-				E152814A1DC0E132001B7563 /* SupportedCapabilitiesDataSource.swift */,
-				E152814B1DC0E132001B7563 /* SupportedDevicesDataSource.swift */,
-			);
-			name = DeviceOperationsViewController;
 			sourceTree = "<group>";
 		};
 		E1E02F4E1DA54B7B001E83B4 /* Subscriptions List View Controller */ = {
@@ -339,7 +304,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = beauNeura;
 				TargetAttributes = {
 					08DD60651F936145007932AD = {
@@ -476,25 +441,16 @@
 			files = (
 				0877CEB41F39FF250020B59E /* PushNotifications.swift in Sources */,
 				55698FA420738C7400FC4349 /* CountryCodeHelper.swift in Sources */,
-				E15281491DC0E11F001B7563 /* DataSourceProtocol.swift in Sources */,
 				E19DB1E01DC0E0960045AA6E /* AppDelegate.swift in Sources */,
 				55698FA2207381CE00FC4349 /* LoginPhoneAuthVC.swift in Sources */,
 				E19DB1E11DC0E0960045AA6E /* ViewController.swift in Sources */,
-				E152814C1DC0E132001B7563 /* SupportedCapabilitiesDataSource.swift in Sources */,
 				E19DB1E21DC0E0960045AA6E /* SubscriptionsListViewController.swift in Sources */,
 				55F5FBF92029A2B30027FDE2 /* SendEventViewController.swift in Sources */,
 				E19DB1E31DC0E0960045AA6E /* SubscriptionsTableViewCell.swift in Sources */,
 				0838F6B81F93551200B39E1D /* MBProgressHUD.m in Sources */,
-				E19DB1E41DC0E0960045AA6E /* PickerViewController.swift in Sources */,
-				E152814D1DC0E132001B7563 /* SupportedDevicesDataSource.swift in Sources */,
-				E19DB1E51DC0E0960045AA6E /* DeviceOperationsTableViewCell.swift in Sources */,
 				55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */,
 				55698FA620739DF300FC4349 /* LoginCountrySelectorTVC.swift in Sources */,
-				E19DB1E61DC0E0960045AA6E /* DeviceOperationsViewController.swift in Sources */,
-				55F5FBF1202896620027FDE2 /* SubscriptionManager.swift in Sources */,
 				55F5FBFA2029A2B30027FDE2 /* SimulateEventTableViewCell.swift in Sources */,
-				E19DB1E71DC0E0960045AA6E /* DeviceOperationsListViewController.swift in Sources */,
-				E19DB1E81DC0E0960045AA6E /* PermissionsListViewController.swift in Sources */,
 				E19DB1E91DC0E0960045AA6E /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,12 +536,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -633,12 +591,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
