@@ -109,10 +109,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-aH-VPj">
-                                <rect key="frame" x="20" y="367" width="335" height="280"/>
+                                <rect key="frame" x="20" y="467" width="335" height="180"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmK-0y-OZZ" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="37.5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Connect and Request Permissions">
@@ -122,19 +122,8 @@
                                             <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LaE-DU-AjU"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uys-ny-dXL" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72.5" width="335" height="62.5"/>
-                                        <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Simulate Event">
-                                            <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="simulateEventPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vz1-Yr-nY4"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-15-6lt" userLabel="Lega" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="145" width="335" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="47.5" width="335" height="37.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Phone Verification Login">
@@ -144,8 +133,19 @@
                                             <segue destination="nGW-JO-ja5" kind="modal" modalPresentationStyle="currentContext" id="2rF-dj-jxH"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uys-ny-dXL" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="95" width="335" height="37.5"/>
+                                        <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Simulate Event">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="simulateEventPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vz1-Yr-nY4"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ9-oJ-Zgd" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="217.5" width="335" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="142.5" width="335" height="37.5"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Subscriptions List">
@@ -157,7 +157,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="aIg-x4-Bql"/>
+                                    <constraint firstAttribute="height" constant="180" id="aIg-x4-Bql"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -179,6 +179,7 @@
                         <outlet property="neuraSymbolBottom" destination="oPz-2J-7Kk" id="v6D-ea-Q0Y"/>
                         <outlet property="neuraSymbolTop" destination="xyx-yJ-bOD" id="6xT-h0-SRm"/>
                         <outlet property="permissionsListButton" destination="WZ9-oJ-Zgd" id="6kw-eO-YdO"/>
+                        <outlet property="phoneVerificationBtn" destination="v9B-15-6lt" id="ahd-b9-fmY"/>
                         <outlet property="sdkVersionLabel" destination="yhl-Fl-Zgk" id="v1G-9v-YCB"/>
                         <outlet property="simulateEvent" destination="Uys-ny-dXL" id="khn-hh-zcd"/>
                         <segue destination="7VO-CP-lRs" kind="modal" identifier="subscriptionsList" id="d94-N4-j3D"/>

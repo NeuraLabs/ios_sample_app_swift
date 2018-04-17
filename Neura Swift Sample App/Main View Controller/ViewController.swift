@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var simulateEvent: RoundedButton!
     @IBOutlet weak var loginButton: RoundedButton!
     
+    @IBOutlet weak var phoneVerificationBtn: RoundedButton!
     @IBOutlet weak var neuraStatusLabel: UILabel!
     @IBOutlet weak var sdkVersionLabel:  UILabel!
     @IBOutlet weak var appVersionLabel:  UILabel!
@@ -30,8 +31,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-        self.simulateEvent.isHidden = true
-        self.loginButton.isHidden = true
+        phoneVerificationBtn.isHidden = true
+        simulateEvent.isHidden = true
         subscribeMoments()
     }
     
