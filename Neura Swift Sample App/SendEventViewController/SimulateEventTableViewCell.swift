@@ -24,6 +24,9 @@ class SimulateEventTableViewCell: UITableViewCell {
     
     @IBAction func sendEventAction(_ sender: UIButton) {
         let eventName = NEvent.enum(forEventName: eventNameForEnum)
+        
+        /* Simulate an event.
+        (sends a fake event, simulating a detection of a Neura event)*/
         NeuraSDK.shared.simulateEvent(eventName, callback: { result in
             let title =   result == nil || !result!.success  ? "Error" : "Approve"
             let message = result?.errorString != nil ? result!.errorString! : "Sucsess"

@@ -54,6 +54,7 @@ class SubscriptionsListViewController: UIViewController, UITableViewDelegate, UI
     
     func reloadAllData() {
         self.subscriptions.removeAll()
+       // Get a list of current subscriptions
         neuraSDK.getSubscriptionsList() { result in
             guard result.success else { return }
             for subscription in result.subscriptions {
@@ -76,11 +77,6 @@ class SubscriptionsListViewController: UIViewController, UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:SubscriptionsTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! SubscriptionsTableViewCell
         
-        // Add a handler for value changes, if missing.
-        if cell.subscribeSwitch.allTargets.count == 0 {
-            cell.subscribeSwitch.addTarget(self, action: #selector(SubscriptionsListViewController.subscribeToEventSwitch(_:)), for: UIControlEvents.valueChanged)
-        }
-        
         // Configure the cell.
         let eventName = self.eventNamesArray[indexPath.item]
         cell.subscriptionName?.text = eventName
@@ -95,29 +91,7 @@ class SubscriptionsListViewController: UIViewController, UITableViewDelegate, UI
         return cell
     }
     
-    @objc func subscribeToEventSwitch(_ subscribeSwitch: UISwitch) {
-        let cell = subscribeSwitch.superview?.superview as! SubscriptionsTableViewCell
-        let indexPath = self.subscriptionsTableView.indexPath(for: cell)
-        let eventName = self.eventNamesArray[(indexPath?.row)!]
-        
-        if subscribeSwitch.isOn {
-            //this function checks whether an event subscription is missing data in order to successfully subscribe
-            if neuraSDK.isMissingData(forEvent: eventName) == true {
-                let alertController = UIAlertController(title: "A related place node should be added, before you can subscribe to this event. Would you like to subscribe anyway?", message: nil, preferredStyle: .alert)
-                let noAction = UIAlertAction(title: "I will wait", style: .default, handler: { _ in subscribeSwitch.setOn(false, animated: true)})
-                alertController.addAction(noAction)
-                let okAction = UIAlertAction(title: "Yes", style: .default, handler: {_ in self.subscribeToEvent(eventName)})
-                alertController.addAction(okAction)
-                
-                self.present(alertController, animated: true, completion: nil)
-            } else {
-                subscribeToEvent(eventName)
-            }
-        } else {
-            removeSubscriptionWithEventName(eventName)
-        }
-    }
-
+    
    
 
     func subscribeToEvent(_ eventName: String) {

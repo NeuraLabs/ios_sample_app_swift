@@ -97,6 +97,8 @@ class ViewController: UIViewController {
     
     //MARK: Subscriptions
     func subscribeMoments(){
+        /*declare what events you want your app to be subscribed to and let the
+        SDK manage the subscriptions for you*/
         neuraSDK.requireSubscriptions(toEvents: ["userArrivedHome", "userLeftHome", "userStartedWalking", "userFinishedWalking"], method: .push)
     }
     
@@ -104,7 +106,13 @@ class ViewController: UIViewController {
     func loginToNeura() {
         self.showBlockingProgress()
         
+        
+        /*An anonymous based authentication request (without user validation)
+        Uses iOS vendor identifier to identify the user.*/
+        
         let request = NeuraAnonymousAuthenticationRequest()
+        
+        //Use to authenticate the app
         NeuraSDK.shared.authenticate(with: request) { result in
             if let error = result.error {
                 // Handle authentication errors if required

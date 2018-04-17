@@ -24,6 +24,11 @@ class PushNotifications: NSObject {
     
     class func register(deviceToken: Data) {
         UserDefaults.standard.set(deviceToken, forKey: kStoredDeviceToken)
+        /**
+         Informs Neura's server about the push token.
+         Also stores locally the token as string (use getDeviceToken to get the stored value).
+         You must call this in application:didRegisterForRemoteNotificationsWithDeviceToken: for Neura's data collection to work as designed.
+         */
         NeuraSDKPushNotification.registerDeviceToken(deviceToken)
     }
     
