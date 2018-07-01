@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool{
         /*The app UID and Secret were given to you at the end of the app registration process
         Change the values below to the ones related to your app (https://dev.theneura.com/console/apps)*/
-        NeuraSDK.shared.appUID = "APP_UID"
-        NeuraSDK.shared.appSecret = "APP_SECRET"
+        NeuraSDK.shared.setAppUID("[APP_ID]", appSecret: "[APP_SECRET]")
         PushNotifications.requestPermissionForPushNotifications()
         return true
     }

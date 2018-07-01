@@ -20,8 +20,6 @@
 		55E47AE32085E73B000AF994 /* SubscriptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E47AE12085E73B000AF994 /* SubscriptionsTableViewCell.swift */; };
 		55E47AE62085E7AE000AF994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E47AE52085E7AE000AF994 /* ViewController.swift */; };
 		55E47AE92085E7BB000AF994 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E47AE82085E7BA000AF994 /* RoundedButton.swift */; };
-		55E57235207A0DBC006D2D10 /* NeuraSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E57233207A0D9D006D2D10 /* NeuraSDK.framework */; };
-		55E57236207A0DBC006D2D10 /* NeuraSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55E57233207A0D9D006D2D10 /* NeuraSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */; };
 		55F5FBF92029A2B30027FDE2 /* SendEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */; };
 		55F5FBFA2029A2B30027FDE2 /* SimulateEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */; };
@@ -54,17 +52,6 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55E57237207A0DBD006D2D10 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				55E57236207A0DBC006D2D10 /* NeuraSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +72,6 @@
 		55E47AE12085E73B000AF994 /* SubscriptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsTableViewCell.swift; sourceTree = "<group>"; };
 		55E47AE52085E7AE000AF994 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55E47AE82085E7BA000AF994 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		55E57233207A0D9D006D2D10 /* NeuraSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NeuraSDK.framework; path = "Neura Swift Sample App/NeuraSDK.framework"; sourceTree = "<group>"; };
 		55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		55F5FBF62029A2B20027FDE2 /* SendEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEventViewController.swift; sourceTree = "<group>"; };
 		55F5FBF72029A2B20027FDE2 /* SimulateEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulateEventTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,7 +99,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9757AA5BA993452C4286B2B7 /* Pods_Neura_Swift_Sample_App.framework in Frameworks */,
-				55E57235207A0DBC006D2D10 /* NeuraSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +201,6 @@
 		E125F7EF1D328BF00078E7B4 = {
 			isa = PBXGroup;
 			children = (
-				55E57233207A0D9D006D2D10 /* NeuraSDK.framework */,
 				E125F7FA1D328BF00078E7B4 /* Neura Swift Sample App */,
 				08DD60671F936145007932AD /* Notifications */,
 				E125F7F91D328BF00078E7B4 /* Products */,
@@ -285,7 +269,6 @@
 				88667603DC253953BF2F374D /* [CP] Embed Pods Frameworks */,
 				AE386BB6C8B20C5BCB572487 /* [CP] Copy Pods Resources */,
 				08DD60711F936145007932AD /* Embed App Extensions */,
-				55E57237207A0DBD006D2D10 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
