@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,11 +39,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7m-oo-kNk">
                                         <rect key="frame" x="87.5" y="93" width="200" height="200"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neura_symbol_top_element" translatesAutoresizingMaskIntoConstraints="NO" id="xyx-yJ-bOD">
-                                                <rect key="frame" x="31" y="30" width="138" height="70"/>
-                                            </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neura_symbol_bottom_element" translatesAutoresizingMaskIntoConstraints="NO" id="oPz-2J-7Kk">
-                                                <rect key="frame" x="31" y="100" width="138" height="70"/>
+                                                <rect key="frame" x="31" y="130" width="138" height="70"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-Fl-Zgk">
                                                 <rect key="frame" x="57" y="13.5" width="85" height="18"/>
@@ -57,16 +54,19 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neura_symbol_top_element" translatesAutoresizingMaskIntoConstraints="NO" id="xyx-yJ-bOD">
+                                                <rect key="frame" x="31" y="52" width="138" height="70"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="xyx-yJ-bOD" firstAttribute="top" secondItem="f7m-oo-kNk" secondAttribute="top" constant="52" id="5df-Q5-dJq"/>
                                             <constraint firstItem="yhl-Fl-Zgk" firstAttribute="top" secondItem="bZt-cy-z7p" secondAttribute="bottom" constant="2" id="HpV-RN-vyW"/>
-                                            <constraint firstItem="xyx-yJ-bOD" firstAttribute="centerY" secondItem="f7m-oo-kNk" secondAttribute="centerY" constant="-35" id="MbC-h7-KNH"/>
                                             <constraint firstAttribute="width" constant="200" id="Qau-aE-6nM"/>
-                                            <constraint firstItem="oPz-2J-7Kk" firstAttribute="centerY" secondItem="f7m-oo-kNk" secondAttribute="centerY" constant="35" id="d7f-lp-aW1"/>
                                             <constraint firstItem="xyx-yJ-bOD" firstAttribute="centerX" secondItem="f7m-oo-kNk" secondAttribute="centerX" id="dxf-OU-EAv"/>
                                             <constraint firstItem="yhl-Fl-Zgk" firstAttribute="centerX" secondItem="f7m-oo-kNk" secondAttribute="centerXWithinMargins" id="lJQ-gc-PMI"/>
                                             <constraint firstItem="bZt-cy-z7p" firstAttribute="centerX" secondItem="f7m-oo-kNk" secondAttribute="centerX" id="mj0-L7-2wu"/>
+                                            <constraint firstItem="oPz-2J-7Kk" firstAttribute="top" secondItem="xyx-yJ-bOD" secondAttribute="bottom" constant="8" id="nQX-GL-tnJ"/>
                                             <constraint firstItem="oPz-2J-7Kk" firstAttribute="centerX" secondItem="f7m-oo-kNk" secondAttribute="centerX" id="oi4-iV-e2S"/>
                                             <constraint firstAttribute="height" constant="200" id="qeE-cL-bEx"/>
                                         </constraints>
@@ -109,10 +109,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-aH-VPj">
-                                <rect key="frame" x="20" y="467" width="335" height="180"/>
+                                <rect key="frame" x="20" y="567" width="335" height="80"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmK-0y-OZZ" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="Connect and Request Permissions">
@@ -123,7 +123,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v9B-15-6lt" userLabel="Phone Login Button" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="47.5" width="335" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="45" width="335" height="35"/>
                                         <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Phone Verification Login">
@@ -133,31 +133,9 @@
                                             <segue destination="nGW-JO-ja5" kind="modal" modalPresentationStyle="currentContext" id="2rF-dj-jxH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uys-ny-dXL" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="95" width="335" height="37.5"/>
-                                        <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Simulate Event">
-                                            <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="simulateEventPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vz1-Yr-nY4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ9-oJ-Zgd" customClass="RoundedButton" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="142.5" width="335" height="37.5"/>
-                                        <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Subscriptions List">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="permissionsListButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiK-Iu-dCU"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="aIg-x4-Bql"/>
+                                    <constraint firstAttribute="height" constant="80" id="aIg-x4-Bql"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -178,226 +156,16 @@
                         <outlet property="neuraStatusLabel" destination="QFo-Yg-zb9" id="F1J-rR-8kW"/>
                         <outlet property="neuraSymbolBottom" destination="oPz-2J-7Kk" id="v6D-ea-Q0Y"/>
                         <outlet property="neuraSymbolTop" destination="xyx-yJ-bOD" id="6xT-h0-SRm"/>
-                        <outlet property="permissionsListButton" destination="WZ9-oJ-Zgd" id="6kw-eO-YdO"/>
                         <outlet property="phoneVerificationBtn" destination="v9B-15-6lt" id="ahd-b9-fmY"/>
                         <outlet property="sdkVersionLabel" destination="yhl-Fl-Zgk" id="v1G-9v-YCB"/>
-                        <outlet property="simulateEvent" destination="Uys-ny-dXL" id="khn-hh-zcd"/>
-                        <segue destination="7VO-CP-lRs" kind="modal" identifier="subscriptionsList" id="d94-N4-j3D"/>
-                        <segue destination="pDg-ZY-cFq" kind="modal" identifier="simulateEventSegue" id="zkI-xj-zM9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="339" y="312"/>
         </scene>
-        <!--Subscriptions List View Controller-->
-        <scene sceneID="h42-kJ-eN3">
-            <objects>
-                <viewController id="7VO-CP-lRs" customClass="SubscriptionsListViewController" customModule="Neura_Swift_Sample_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XD3-E6-Fma"/>
-                        <viewControllerLayoutGuide type="bottom" id="B5M-Cg-w6J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vgO-pO-3pl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fn9-UP-244">
-                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscriptions List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON6-9d-5q4">
-                                        <rect key="frame" x="119" y="48" width="137" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtX-lR-Uwb">
-                                        <rect key="frame" x="52" y="89.5" width="271.5" height="31.5"/>
-                                        <string key="text">Enable or disable subscriptions based on the
-permissions approved:</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98N-ch-qvN">
-                                        <rect key="frame" x="16" y="46.5" width="24" height="24"/>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="ic_back_grey">
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="backButtonPressed:" destination="7VO-CP-lRs" eventType="touchUpInside" id="Ssp-ir-WZY"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="ON6-9d-5q4" firstAttribute="centerX" secondItem="fn9-UP-244" secondAttribute="centerXWithinMargins" id="3Kw-5D-gPh"/>
-                                    <constraint firstItem="TtX-lR-Uwb" firstAttribute="centerX" secondItem="fn9-UP-244" secondAttribute="centerXWithinMargins" id="3Lo-UD-OGa"/>
-                                    <constraint firstItem="TtX-lR-Uwb" firstAttribute="top" secondItem="ON6-9d-5q4" secondAttribute="bottom" constant="21" id="ASz-bp-wIn"/>
-                                    <constraint firstAttribute="height" constant="128" id="fn1-fU-Dzc"/>
-                                    <constraint firstItem="98N-ch-qvN" firstAttribute="centerY" secondItem="ON6-9d-5q4" secondAttribute="centerY" id="j3B-Wi-YEB"/>
-                                    <constraint firstItem="ON6-9d-5q4" firstAttribute="top" secondItem="fn9-UP-244" secondAttribute="topMargin" constant="40" id="lzj-JH-8kp"/>
-                                    <constraint firstItem="98N-ch-qvN" firstAttribute="leading" secondItem="fn9-UP-244" secondAttribute="leading" constant="16" id="u1Q-br-cof"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAm-rS-Js9">
-                                <rect key="frame" x="0.0" y="156" width="375" height="511"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-EK-vVN">
-                                        <rect key="frame" x="8" y="4" width="359" height="503"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuscriptionsListViewCell" id="ZwT-LJ-y2i" customClass="SubscriptionsTableViewCell" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="359" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZwT-LJ-y2i" id="3Mu-B3-mB1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yo-vl-Xlv">
-                                                            <rect key="frame" x="15" y="11.5" width="42" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsM-dP-eve">
-                                                            <rect key="frame" x="295" y="6.5" width="51" height="31"/>
-                                                            <accessibility key="accessibilityConfiguration">
-                                                                <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
-                                                            </accessibility>
-                                                        </switch>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="5yo-vl-Xlv" firstAttribute="centerY" secondItem="3Mu-B3-mB1" secondAttribute="centerY" id="IYE-Fw-N7y"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="nsM-dP-eve" secondAttribute="trailing" id="MBK-cx-kbz"/>
-                                                        <constraint firstItem="5yo-vl-Xlv" firstAttribute="leading" secondItem="3Mu-B3-mB1" secondAttribute="leadingMargin" id="ReX-3q-oYa"/>
-                                                        <constraint firstItem="nsM-dP-eve" firstAttribute="centerY" secondItem="3Mu-B3-mB1" secondAttribute="centerY" id="paD-H4-VMz"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                                <connections>
-                                                    <outlet property="subscribeSwitch" destination="nsM-dP-eve" id="hHe-OB-XnF"/>
-                                                    <outlet property="subscriptionName" destination="5yo-vl-Xlv" id="SpL-IZ-wTg"/>
-                                                </connections>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="0D1-EK-vVN" secondAttribute="bottom" constant="-4" id="Gag-NG-8CE"/>
-                                    <constraint firstItem="0D1-EK-vVN" firstAttribute="top" secondItem="CAm-rS-Js9" secondAttribute="topMargin" constant="-4" id="R6z-RF-i5d"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="0D1-EK-vVN" secondAttribute="trailing" id="dW4-Xz-FPG"/>
-                                    <constraint firstItem="0D1-EK-vVN" firstAttribute="leading" secondItem="CAm-rS-Js9" secondAttribute="leadingMargin" id="qLX-mA-VAw"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="CAm-rS-Js9" firstAttribute="leading" secondItem="vgO-pO-3pl" secondAttribute="leading" id="8wV-n7-F5z"/>
-                            <constraint firstAttribute="trailing" secondItem="fn9-UP-244" secondAttribute="trailing" id="Sea-xX-9dE"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="CAm-rS-Js9" secondAttribute="bottom" id="XFT-wW-wxE"/>
-                            <constraint firstItem="fn9-UP-244" firstAttribute="leading" secondItem="vgO-pO-3pl" secondAttribute="leading" id="ZVJ-s0-J07"/>
-                            <constraint firstItem="CAm-rS-Js9" firstAttribute="top" secondItem="fn9-UP-244" secondAttribute="bottom" constant="8" id="cMy-69-cIU"/>
-                            <constraint firstAttribute="trailing" secondItem="CAm-rS-Js9" secondAttribute="trailing" id="eUK-pJ-Sdb"/>
-                            <constraint firstAttribute="topMargin" secondItem="fn9-UP-244" secondAttribute="top" id="ygX-S6-QAa"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="subscriptionsTableView" destination="0D1-EK-vVN" id="OWZ-ag-ZaT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e4Q-RC-4Vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="977.5" y="291.5"/>
-        </scene>
-        <!--Send Event View Controller-->
-        <scene sceneID="2J1-KB-5wf">
-            <objects>
-                <viewController id="pDg-ZY-cFq" customClass="SendEventViewController" customModule="Neura_Swift_Sample_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6DZ-g0-i4N"/>
-                        <viewControllerLayoutGuide type="bottom" id="ue5-n0-b1z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c0G-nK-san">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Events List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhw-hs-nF0">
-                                <rect key="frame" x="107" y="20" width="208" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDA-Ug-vnW">
-                                <rect key="frame" x="16" y="-1" width="44" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="ic_back_grey">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="pDg-ZY-cFq" eventType="touchUpInside" id="GGd-fi-Qu7"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-50-YZK">
-                                <rect key="frame" x="0.0" y="82" width="375" height="1637"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SimulateEventTableViewCell" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SimulateEventCell" rowHeight="65" id="2kx-4Q-RO4" customClass="SimulateEventTableViewCell" customModule="Neura_Swift_Sample_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2kx-4Q-RO4" id="11h-nn-HRB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPC-ge-ag6">
-                                                    <rect key="frame" x="267" y="8" width="92" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.23921568630000001" green="0.80784313730000001" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" title="Simulate">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="sendEventAction:" destination="2kx-4Q-RO4" eventType="touchUpInside" id="n7f-N1-17t"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userFinishedRunning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRt-i7-ziq">
-                                                    <rect key="frame" x="18" y="20" width="233" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="eventName" destination="aRt-i7-ziq" id="0uk-Qx-Rfg"/>
-                                            <outlet property="sendBtn" destination="rPC-ge-ag6" id="0lJ-0B-Oqc"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="pDg-ZY-cFq" id="e1B-d9-5u3"/>
-                                    <outlet property="delegate" destination="pDg-ZY-cFq" id="0lc-ag-Tms"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rGM-Ae-xK4"/>
-                    <connections>
-                        <outlet property="eventsTableView" destination="1ib-50-YZK" id="0qK-eG-2xf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ri8-np-LmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="982.5" y="-1177.5"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="ic_back_grey" width="24" height="24"/>
         <image name="neura_sdk_demo_logo" width="186" height="18"/>
         <image name="neura_symbol_bottom_element" width="138" height="70"/>
         <image name="neura_symbol_top_element" width="138" height="70"/>

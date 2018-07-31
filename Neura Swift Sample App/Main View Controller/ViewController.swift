@@ -32,8 +32,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.setupUI()
         phoneVerificationBtn.isHidden = true
-        simulateEvent.isHidden = true
-        subscribeMoments()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -208,17 +206,4 @@ class ViewController: UIViewController {
             self.loginToNeura()
         }
     }
-    
-    @IBAction func permissionsListButtonPressed(_ sender: AnyObject) {
-        if neuraSDK.isAuthenticated() {
-            self.performSegue(withIdentifier: "subscriptionsList", sender: self)
-        } else {
-           showUserNotLoggedInAlert()
-        }
-    }
-    
-    @IBAction func simulateEventPressed(_ sender: RoundedButton) {
-        self.performSegue(withIdentifier: "simulateEventSegue", sender: self)
-    }
-    
 }
