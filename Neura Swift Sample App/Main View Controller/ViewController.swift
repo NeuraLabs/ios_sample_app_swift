@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     //MARK: IBOutlets
     
     @IBOutlet weak var permissionsListButton: RoundedButton!
-    @IBOutlet weak var simulateEvent: RoundedButton!
     @IBOutlet weak var loginButton: RoundedButton!
     
     @IBOutlet weak var phoneVerificationBtn: RoundedButton!
@@ -91,13 +90,6 @@ class ViewController: UIViewController {
         }
         self.neuraStatusLabel.text = text
         self.neuraStatusLabel.textColor = color
-    }
-    
-    //MARK: Subscriptions
-    func subscribeMoments(){
-        /*declare what events you want your app to be subscribed to and let the
-        SDK manage the subscriptions for you*/
-        neuraSDK.requireSubscriptions(toEvents: ["userArrivedHome", "userLeftHome", "userStartedWalking", "userFinishedWalking"], method: .push)
     }
     
     //MARK: Authentication
