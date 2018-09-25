@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0838F6B81F93551200B39E1D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0838F6B31F93533100B39E1D /* MBProgressHUD.m */; };
 		0877CEB41F39FF250020B59E /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877CEB31F39FF250020B59E /* PushNotifications.swift */; };
 		08DD60691F936145007932AD /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD60681F936145007932AD /* NotificationService.swift */; };
 		08DD606D1F936145007932AD /* Notifications.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 08DD60661F936145007932AD /* Notifications.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -52,8 +51,6 @@
 
 /* Begin PBXFileReference section */
 		052C7FC66BC1022B74AE05C8 /* Pods-Neura Swift Sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neura Swift Sample App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App.debug.xcconfig"; sourceTree = "<group>"; };
-		0838F6B21F93533100B39E1D /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		0838F6B31F93533100B39E1D /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0838F6B41F9354BE00B39E1D /* Neura Swift Sample App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Neura Swift Sample App-Bridging-Header.h"; sourceTree = "<group>"; };
 		0877CEB31F39FF250020B59E /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
 		08DD60661F936145007932AD /* Notifications.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notifications.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +97,6 @@
 		0838F6B11F93533100B39E1D /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				0838F6B21F93533100B39E1D /* MBProgressHUD.h */,
-				0838F6B31F93533100B39E1D /* MBProgressHUD.m */,
 				0838F6B41F9354BE00B39E1D /* Neura Swift Sample App-Bridging-Header.h */,
 			);
 			name = MBProgressHUD;
@@ -239,7 +234,6 @@
 				E125F7F51D328BF00078E7B4 /* Frameworks */,
 				E125F7F61D328BF00078E7B4 /* Resources */,
 				88667603DC253953BF2F374D /* [CP] Embed Pods Frameworks */,
-				AE386BB6C8B20C5BCB572487 /* [CP] Copy Pods Resources */,
 				08DD60711F936145007932AD /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -333,30 +327,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${PODS_ROOT}/NeuraSDKFramework/NeuraSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NeuraSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE386BB6C8B20C5BCB572487 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D816E081AE018A62D2414CBC /* [CP] Check Pods Manifest.lock */ = {
@@ -396,7 +377,6 @@
 				55698FA420738C7400FC4349 /* CountryCodeHelper.swift in Sources */,
 				E19DB1E01DC0E0960045AA6E /* AppDelegate.swift in Sources */,
 				55698FA2207381CE00FC4349 /* LoginPhoneAuthVC.swift in Sources */,
-				0838F6B81F93551200B39E1D /* MBProgressHUD.m in Sources */,
 				55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */,
 				55E47AE62085E7AE000AF994 /* ViewController.swift in Sources */,
 				55698FA620739DF300FC4349 /* LoginCountrySelectorTVC.swift in Sources */,

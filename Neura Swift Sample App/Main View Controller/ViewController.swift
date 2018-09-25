@@ -8,6 +8,7 @@
 
 import UIKit
 import NeuraSDK
+import MBProgressHUD
 
 class ViewController: UIViewController {
     //MARK: Properties
