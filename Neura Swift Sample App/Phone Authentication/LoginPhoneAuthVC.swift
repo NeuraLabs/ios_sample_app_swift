@@ -8,7 +8,7 @@
 
 import Foundation
 import NeuraSDK
-import MBProgressHUD
+import KRProgressHUD
 
 class LoginPhoneAuthVC: UIViewController, CountryCodeDelegate {
     
@@ -30,12 +30,12 @@ class LoginPhoneAuthVC: UIViewController, CountryCodeDelegate {
         phoneNumber = countryCodeTf.text! + phoneNumberTF.text!
         request.authenticationType = .phoneInjection
         request.phone = phoneNumber
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+        KRProgressHUD.show()
 
         NeuraSDK.shared.authenticate(with: request, callback: {
             result in
             DispatchQueue.main.async {
-                MBProgressHUD.hide(for: self.view, animated: true)
+                KRProgressHUD.dismiss()
                 if result.success {
                      self.dismiss(animated: true, completion: nil)
                 }

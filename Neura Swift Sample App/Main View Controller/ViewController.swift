@@ -8,7 +8,7 @@
 
 import UIKit
 import NeuraSDK
-import MBProgressHUD
+import KRProgressHUD
 
 class ViewController: UIViewController {
     //MARK: Properties
@@ -163,11 +163,11 @@ class ViewController: UIViewController {
     // MARK: - Blocking progress
     //
     func showBlockingProgress() {
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+        KRProgressHUD.show()
     }
     
     func hideBlockingProgress() {
-        MBProgressHUD.hide(for: self.view, animated: true)
+        KRProgressHUD.dismiss()
     }
     
     //

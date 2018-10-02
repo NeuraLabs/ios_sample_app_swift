@@ -326,18 +326,18 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
 				"${PODS_ROOT}/NeuraSDKFramework/NeuraSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NeuraSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D816E081AE018A62D2414CBC /* [CP] Check Pods Manifest.lock */ = {

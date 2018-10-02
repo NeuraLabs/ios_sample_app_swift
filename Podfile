@@ -2,8 +2,8 @@ use_frameworks!
 platform :ios, '9.0'
 
 def basic_app_pods
-    pod 'NeuraSDKFramework', '~> 4.10.0'
-    pod 'MBProgressHUD'
+    pod 'NeuraSDKFramework', '~> 4.10.1'
+    pod 'KRProgressHUD',     '~> 2.1'
 end
 
 target 'Neura Swift Sample App' do
