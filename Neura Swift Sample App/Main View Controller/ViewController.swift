@@ -194,7 +194,7 @@ class ViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: AnyObject) {
         if neuraSDK.isAuthenticated() {
             self.logoutFromNeura()
-            self.loginButton.setTitle("Connect and request permissions", for: UIControlState())
+            self.loginButton.setTitle("Connect and request permissions", for: UIControl.State())
         } else {
             self.loginToNeura()
         }

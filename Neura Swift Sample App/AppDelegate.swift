@@ -14,7 +14,7 @@ import NeuraSDK
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool{
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool{
         /*The app UID and Secret were given to you at the end of the app registration process
         Change the values below to the ones related to your app (https://dev.theneura.com/console/apps)*/
         NeuraSDK.shared.setAppUID("[APP_ID]", appSecret: "[APP_SECRET]")
