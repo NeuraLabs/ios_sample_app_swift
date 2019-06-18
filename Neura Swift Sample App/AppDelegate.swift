@@ -39,6 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PushNotifications.register(deviceToken: deviceToken)
     }
     
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        NSLog(">>> Error with registering for remote notifications: %@", error)
+        NSLog("Please check that you set everything right for supporting push notifications on iOS dev center")
+
+    }
     // allowa OS minimal time in background from time to time
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
