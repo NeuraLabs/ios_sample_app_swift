@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        NSLog(">>> Error with registering for remote notifications: %@", error)
+        NSLog(">>> Error with registering for remote notifications: \(error)")
         NSLog("Please check that you set everything right for supporting push notifications on iOS dev center")
 
     }

@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         case .authenticatedAnonymously, .authenticated:
             title = "Disconnect"
             
-        case .accessTokenRequested:
+        case .requestingAuthenticationFromServer:
             title = "Connecting..."
             
         default:
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         var text = ""
         var color = UIColor.black
         switch authState {
-        case .accessTokenRequested:
+        case .requestingAuthenticationFromServer:
             color = .blue
             text = "Requested tokens..."
         case .authenticated, .authenticatedAnonymously:
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
                 text = "Connected"
             }
             
-        case .failedReceivingAccessToken:
+        case .failed:
             color = .red
             text = "Failed receiving tokens"
         default:
