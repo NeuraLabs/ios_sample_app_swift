@@ -117,6 +117,11 @@ class ViewController: UIViewController {
             if result.success {
                 // Successful authentication
                 // (access token will be received by push)
+                
+                //set external id
+                let id = NExternalId(externalId: "[one signal requested id]")
+                NeuraSDK.shared.externalId = id
+                
                 self.neuraAuthStateUpdated()
             } else {
                 // Handle failed login.
