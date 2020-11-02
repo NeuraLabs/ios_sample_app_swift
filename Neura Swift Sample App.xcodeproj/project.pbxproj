@@ -18,6 +18,7 @@
 		55E47AE62085E7AE000AF994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E47AE52085E7AE000AF994 /* ViewController.swift */; };
 		55E47AE92085E7BB000AF994 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E47AE82085E7BA000AF994 /* RoundedButton.swift */; };
 		55E57239207A25D5006D2D10 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */; };
+		92821FC819BBFFF3D852ED98 /* Pods_Notifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85E4EBEADBCC00B6C4DC2BC /* Pods_Notifications.framework */; };
 		9757AA5BA993452C4286B2B7 /* Pods_Neura_Swift_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E00058F4480B85D40194C /* Pods_Neura_Swift_Sample_App.framework */; };
 		E15281501DC0E16E001B7563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E152814E1DC0E16E001B7563 /* LaunchScreen.storyboard */; };
 		E19DB1E01DC0E0960045AA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DB1C41DC0DFAF0045AA6E /* AppDelegate.swift */; };
@@ -64,8 +65,11 @@
 		55E47AE52085E7AE000AF994 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55E47AE82085E7BA000AF994 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		55E57238207A25D5006D2D10 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		57BB66652550222F000D19CA /* Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifications.entitlements; sourceTree = "<group>"; };
 		698E00058F4480B85D40194C /* Pods_Neura_Swift_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Neura_Swift_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		766AEE5FFE920C3AAB641E00 /* Pods-Neura Swift Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Neura Swift Sample App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App.release.xcconfig"; sourceTree = "<group>"; };
+		A85E4EBEADBCC00B6C4DC2BC /* Pods_Notifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B983B82CA3F8A8C23A69B923 /* Pods-Notifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notifications.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notifications/Pods-Notifications.debug.xcconfig"; sourceTree = "<group>"; };
 		E125F7F81D328BF00078E7B4 /* Neura Swift Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neura Swift Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E152814F1DC0E16E001B7563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Neura Swift Sample App/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		E19DB1C41DC0DFAF0045AA6E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Neura Swift Sample App/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
@@ -73,6 +77,7 @@
 		E19DB1DC1DC0E03C0045AA6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Neura Swift Sample App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		E19DB1DE1DC0E0440045AA6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Neura Swift Sample App/Info.plist"; sourceTree = SOURCE_ROOT; };
 		E1EDE09C1DBFACE6001B6329 /* Neura Swift Sample App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Neura Swift Sample App.entitlements"; path = "Neura Swift Sample App/Neura Swift Sample App.entitlements"; sourceTree = SOURCE_ROOT; };
+		EC5F7ECDAA8879FCFF0F679F /* Pods-Notifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notifications.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notifications/Pods-Notifications.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92821FC819BBFFF3D852ED98 /* Pods_Notifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 		08DD60671F936145007932AD /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				57BB66652550222F000D19CA /* Notifications.entitlements */,
 				08DD60681F936145007932AD /* NotificationService.swift */,
 				08DD606A1F936145007932AD /* Info.plist */,
 			);
@@ -154,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				698E00058F4480B85D40194C /* Pods_Neura_Swift_Sample_App.framework */,
+				A85E4EBEADBCC00B6C4DC2BC /* Pods_Notifications.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +171,8 @@
 			children = (
 				052C7FC66BC1022B74AE05C8 /* Pods-Neura Swift Sample App.debug.xcconfig */,
 				766AEE5FFE920C3AAB641E00 /* Pods-Neura Swift Sample App.release.xcconfig */,
+				B983B82CA3F8A8C23A69B923 /* Pods-Notifications.debug.xcconfig */,
+				EC5F7ECDAA8879FCFF0F679F /* Pods-Notifications.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -212,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08DD606E1F936145007932AD /* Build configuration list for PBXNativeTarget "Notifications" */;
 			buildPhases = (
+				AA20BF4A20EF4ACFE4009DD5 /* [CP] Check Pods Manifest.lock */,
 				08DD60621F936145007932AD /* Sources */,
 				08DD60631F936145007932AD /* Frameworks */,
 				08DD60641F936145007932AD /* Resources */,
@@ -345,6 +356,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Neura Swift Sample App/Pods-Neura Swift Sample App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AA20BF4A20EF4ACFE4009DD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D816E081AE018A62D2414CBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,11 +446,13 @@
 /* Begin XCBuildConfiguration section */
 		08DD606F1F936145007932AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B983B82CA3F8A8C23A69B923 /* Pods-Notifications.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UF894MT86P;
@@ -436,11 +471,13 @@
 		};
 		08DD60701F936145007932AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5F7ECDAA8879FCFF0F679F /* Pods-Notifications.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UF894MT86P;

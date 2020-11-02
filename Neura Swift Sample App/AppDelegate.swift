@@ -8,6 +8,7 @@
 
 import UIKit
 import NeuraSDK
+import OneSignal
 
 
 @UIApplicationMain
@@ -18,6 +19,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*The app UID and Secret were given to you at the end of the app registration process
         Change the values below to the ones related to your app (https://dev.theneura.com/console/apps)*/
         NeuraSDK.shared.setAppUID("[APP_ID]", appSecret: "[APP_SECRET]")
+        
+        
+        //START OneSignal initialization code
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
+        
+        // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
+        OneSignal.initWithLaunchOptions(launchOptions,
+          appId: "YOUR_ONESIGNAL_APP_ID",
+          handleNotificationAction: nil,
+          settings: onesignalInitSettings)
+
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+
+        // promptForPushNotifications will show the native iOS notification permission prompt.
+        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+          print("User accepted notifications: \(accepted)")
+        })
+        //END OneSignal initializataion code
+        
+        
+        
+        
         PushNotifications.requestPermissionForPushNotifications()
         return true
     }
